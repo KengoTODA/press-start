@@ -1,1 +1,200 @@
-hello, world!
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>PRESS START for enchant.js</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/ae290cc.css">
+
+
+
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+    <div class="navbar navbar-fixed-top">
+
+      <div class="navbar-inner">
+
+        <div class="container">
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </a>
+
+          <a class="brand" href="#">PRESS START</a>
+
+          <div class="nav-collapse">
+
+            <ul class="nav">
+
+              <li class="active"><a href="#">日本語</a></li>
+
+            </ul>
+
+          </div><!--/.nav-collapse -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container">
+
+
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+
+      <div class="hero-unit">
+
+        <h1>PRESS START!</h1>
+
+        <p>enchant.jsプログラミングのための雛形を提供するサイトへようこそ！
+        快適なプログラミングを楽しむために、ぜひ雛形を活用してください。</p>
+
+      </div>
+
+
+      <div class="row">
+        <div class="span8">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>1. プラグインの選択</legend>
+              <div class="control-group">
+                <label class="control-label" for="plugin">使用するプラグイン</label>
+                <div class="controls">
+                  <select multiple id="plugin" name="plugin">
+                    <option>nineleap.enchant.js</option>
+                    <option>ui.enchant.js</option>
+                    <option>twitter.enchant.js</option>
+                  </select>
+                  <p class="help-block">※複数選択可</p>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>2. Rakefileのダウンロード</legend>
+              <div class="control-group">
+                <label class="control-label" for="result">Rakefile</label>
+                <div class="controls">
+                  <p><a id="download" href="#">Rakefile</a>をダウンロードする</p>
+                  <p class="help-block">※Rakefileという名前で保存してください。</p>
+                  <p class="help-block">※ダウンロードできない場合は以下からコピーしてください。</p>
+                  <textarea id="result" rows="3" readonly></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. 開発をはじめる</legend>
+              <div class="control-group">
+                <label class="control-label">雛形の作成</label>
+                <div class="controls">
+                  <p>
+                    Rakefileを保存したディレクトリで<code>rake</code>コマンドを実行してください。
+                    必要なファイル一式が自動的に作成されます。あとは<code>game.js</code>を編集するだけです。
+                  </p>
+                </div>
+                <label class="control-label">コードの最適化</label>
+                <div class="controls">
+                  <p>
+                    <a href="http://requirejs.org/docs/download.html#rjs">RequireJSの最適化ツール（r.js）</a>がインストールされている場合、<code>rake optimize</code>コマンドを実行することで
+                    コードを最適化し高速に実行できるように変更できます。最適化されたコードはoptimizeディレクトリに
+                    保存されます。
+                  </p>
+                </div>
+                <label class="control-label">zipファイルの作成</label>
+                <div class="controls">
+                  <p>
+                    <code>rake package</code>コマンドを実行することで、配布用のzipファイルを作成できます。
+                    zipファイルはそのまま9leapに投稿できます。コードを最適化した場合はoptimizeディレクトリ内で
+                    <code>rake package</code>コマンドを実行してください。
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="span4">
+          <h3>PRESS STARTとは</h3>
+          <p>enchant.jsによるHTML5プログラミングを素早く始めるための雛形を提供するサイトです。</p>
+          <p>雛形の利用にはrakeが必要です。RequireJSがインストールされている環境ではコードの最適化機能も使えます。</p>
+          <hr>
+          <h3>rakeとは</h3>
+          <p>主にRubyコミュニティで利用されているビルドツールです。詳しくは<a href="http://ja.wikipedia.org/wiki/Rake">ウィキペディア</a>の記事をご覧ください。</p>
+          <hr>
+          <h3>フィードバックをお待ちしています</h3>
+          <p><a href="https://github.com/eller86/press-start">GitHub</a>にてフィードバックをお待ちしています。</p>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+      <footer>
+
+        <p>&copy; eller86 2012</p>
+
+      </footer>
+
+
+
+    </div> <!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+
+
+<!-- scripts concatenated and minified via ant build script-->
+
+<script src="js/script.js"></script>
+
+<!-- end scripts-->
+
+
+
+<script>
+
+	var _gaq=[['_setAccount','UA-30306757-1'],['_trackPageview']];
+
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+
+</script>
+
+
+
+</body>
+</html>

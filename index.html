@@ -103,12 +103,18 @@
               <div class="control-group">
                 <label class="control-label" for="plugin">使用するプラグイン</label>
                 <div class="controls">
-                  <select multiple id="plugin" name="plugin">
-                    <option>nineleap.enchant.js</option>
-                    <option>ui.enchant.js</option>
-                    <option>twitter.enchant.js</option>
-                  </select>
-                  <p class="help-block">※複数選択可</p>
+                  <label class="checkbox">
+                    <input type="checkbox" name="plugin" value="nineleap.enchant.js"/>
+                    nineleap.enchant.js
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="plugin" value="ui.enchant.js" />
+                    ui.enchant.js
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="plugin" value="twitter.enchant.js" />
+                    twitter.enchant.js
+                  </label>
                 </div>
               </div>
             </fieldset>

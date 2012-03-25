@@ -67,8 +67,6 @@
 
               <li class="active"><a href="#">日本語</a></li>
 
-              <li><a href="#about">English</a></li>
-
             </ul>
 
           </div><!--/.nav-collapse -->
@@ -99,34 +97,72 @@
 
       <div class="row">
         <div class="span8">
-          <form class="form-horizontal" id="download">
+          <form class="form-horizontal">
             <fieldset>
-              <legend>雛形の選択</legend>
-              <div class="control-group">
-                <label class="control-label">enchant.jsのバージョン</label>
-                <div class="controls">
-                  <label class="radio"><input type="radio" name="version" value="0.4.3" checked>0.4.3</label>
-                </div>
-              </div>
+              <legend>1. プラグインの選択</legend>
               <div class="control-group">
                 <label class="control-label" for="plugin">使用するプラグイン</label>
                 <div class="controls">
                   <select multiple id="plugin" name="plugin">
-                    <option>nineleap</option>
-                    <option>ui</option>
-                    <option>twitter</option>
+                    <option>nineleap.enchant.js</option>
+                    <option>ui.enchant.js</option>
+                    <option>twitter.enchant.js</option>
                   </select>
                   <p class="help-block">※複数選択可</p>
                 </div>
               </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">ダウンロード</button>
+            </fieldset>
+            <fieldset>
+              <legend>2. Rakefileのダウンロード</legend>
+              <div class="control-group">
+                <label class="control-label" for="result">Rakefile</label>
+                <div class="controls">
+                  <p><a id="download" href="#">Rakefile</a>をダウンロードする</p>
+                  <p class="help-block">※Rakefileという名前で保存してください。</p>
+                  <p class="help-block">※ダウンロードできない場合は以下からコピーしてください。</p>
+                  <textarea id="result" rows="3" readonly></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. 開発をはじめる</legend>
+              <div class="control-group">
+                <label class="control-label">雛形の作成</label>
+                <div class="controls">
+                  <p>
+                    Rakefileを保存したディレクトリで<code>rake</code>コマンドを実行してください。
+                    必要なファイル一式が自動的に作成されます。あとは<code>game.js</code>を編集するだけです。
+                  </p>
+                </div>
+                <label class="control-label">コードの最適化</label>
+                <div class="controls">
+                  <p>
+                    <a href="http://requirejs.org/docs/download.html#rjs">RequireJSの最適化ツール（r.js）</a>がインストールされている場合、<code>rake optimize</code>コマンドを実行することで
+                    コードを最適化し高速に実行できるように変更できます。最適化されたコードはoptimizeディレクトリに
+                    保存されます。
+                  </p>
+                </div>
+                <label class="control-label">zipファイルの作成</label>
+                <div class="controls">
+                  <p>
+                    <code>rake package</code>コマンドを実行することで、配布用のzipファイルを作成できます。
+                    zipファイルはそのまま9leapに投稿できます。コードを最適化した場合はoptimizeディレクトリ内で
+                    <code>rake package</code>コマンドを実行してください。
+                  </p>
+                </div>
               </div>
             </fieldset>
           </form>
         </div>
 
         <div class="span4">
+          <h3>PRESS STARTとは</h3>
+          <p>enchant.jsによるHTML5プログラミングを素早く始めるための雛形を提供するサイトです。</p>
+          <p>雛形の利用にはrakeが必要です。RequireJSがインストールされている環境ではコードの最適化機能も使えます。</p>
+          <hr>
+          <h3>rakeとは</h3>
+          <p>主にRubyコミュニティで利用されているビルドツールです。詳しくは<a href="http://ja.wikipedia.org/wiki/Rake">ウィキペディア</a>の記事をご覧ください。</p>
+          <hr>
           <h3>フィードバックをお待ちしています</h3>
           <p><a href="https://github.com/eller86/press-start">GitHub</a>にてフィードバックをお待ちしています。</p>
         </div>

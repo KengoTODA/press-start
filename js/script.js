@@ -4,6 +4,9 @@ $(function(){
   $plugin.change(update);
   $result.focus(function(){
     $(this).select();
+  }).click(function(){
+    $(this).select();
+    return false;
   });
   update();
 

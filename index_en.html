@@ -49,8 +49,8 @@
 
             <ul class="nav">
 
-              <li class="active"><a href="#">日本語</a></li>
-              <li><a href="index_en.html">English</a></li>
+              <li><a href="index.html">日本語</a></li>
+              <li class="active"><a href="#">English</a></li>
 
             </ul>
 
@@ -74,8 +74,8 @@
 
         <h1>PRESS START!</h1>
 
-        <p>enchant.jsプログラミングのための雛形を提供するサイトへようこそ！
-        快適なプログラミングを楽しむために、ぜひ雛形を活用してください。</p>
+        <p>Welcome to our site providing template for enchant.js!
+        Our template helps you to create HTML5 game quickly.</p>
 
       </div>
 
@@ -84,9 +84,9 @@
         <div class="span8">
           <form class="form-horizontal">
             <fieldset>
-              <legend>1. プラグインの選択</legend>
+              <legend>1. choose plugins</legend>
               <div class="control-group">
-                <label class="control-label" for="plugin">使用するプラグイン</label>
+                <label class="control-label" for="plugin">plugin to use</label>
                 <div class="controls">
                   <label class="checkbox">
                     <input type="checkbox" name="plugin" value="nineleap.enchant.js"/>
@@ -120,41 +120,40 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend>2. Rakefileのダウンロード</legend>
+              <legend>2. download your Rakefile</legend>
               <div class="control-group">
                 <label class="control-label" for="result">Rakefile</label>
                 <div class="controls">
-                  <p><a id="download" href="#">Rakefile</a>をダウンロードする</p>
-                  <p class="help-block">※Rakefileという名前で保存してください。</p>
-                  <p class="help-block">※ダウンロードできない場合は以下からコピーしてください。</p>
+                  <p>download <a id="download" href="#">Rakefile</a></p>
+                  <p class="help-block"># please name it &quot;Rakefile&quot;</p>
+                  <p class="help-block"># copy below if you cannot download</p>
                   <textarea id="result" rows="3" readonly></textarea>
                 </div>
               </div>
             </fieldset>
             <fieldset>
-              <legend>3. 開発をはじめる</legend>
+              <legend>3. start to code</legend>
               <div class="control-group">
-                <label class="control-label">雛形の作成</label>
+                <label class="control-label">create your templates</label>
                 <div class="controls">
                   <p>
-                    Rakefileを保存したディレクトリで<code>rake</code>コマンドを実行してください。
-                    必要なファイル一式が自動的に作成されます。あとは<code>game.js</code>を編集するだけです。
+                    execute <code>rake</code> command at the directory you saved Rakefile.
+                    All templates will be created. What you need is only editing <code>game.js</code> to create your game.
                   </p>
                 </div>
-                <label class="control-label">コードの最適化</label>
+                <label class="control-label">optimize codes</label>
                 <div class="controls">
                   <p>
-                    <a href="http://requirejs.org/docs/download.html#rjs">RequireJSの最適化ツール（r.js）</a>がインストールされている場合、<code>rake optimize</code>コマンドを実行することで
-                    コードを最適化し高速に実行できるように変更できます。最適化されたコードは<code>optimize</code>ディレクトリに
-                    保存されます。
+                    If you have <a href="http://requirejs.org/docs/download.html#rjs">r.js (JavaScript optimizer)</a>, you can execute <code>rake optimize</code> to optimize your codes.
+                    Optimized codes will be saved into <code>optimize</code> directory.
                   </p>
                 </div>
-                <label class="control-label">zipファイルの作成</label>
+                <label class="control-label">package your game</label>
                 <div class="controls">
                   <p>
-                    <code>rake package</code>コマンドを実行することで、配布用のzipファイルを作成できます。
-                    zipファイルはそのまま<a href="http://9leap.net/">9leap</a>に投稿できます。コードを最適化した場合は<code>optimize</code>ディレクトリ内で
-                    <code>rake package</code>コマンドを実行してください。
+                    To create zip file to distribute, please execute <code>rake package</code> command.
+                    This zip file is <a href="http://9leap.net/">9leap</a> ready.
+                    To package optimized game, please execute at <code>optimize</code> directory.
                   </p>
                 </div>
               </div>
@@ -163,15 +162,15 @@
         </div>
 
         <div class="span4">
-          <h3>PRESS STARTとは</h3>
-          <p>enchant.jsによるHTML5プログラミングを素早く始めるための雛形を提供するサイトです。</p>
-          <p>雛形の利用にはrakeが必要です。RequireJSがインストールされている環境ではコードの最適化機能も使えます。</p>
+          <h3>What is PRESS START?</h3>
+          <p>PRESS START is a web site providing templates for enchant.js.</p>
+          <p><code>rake</code> is required to use template. You can optimize your code if you have <a href="http://requirejs.org/docs/download.html#rjs">r.js</a>.</p>
           <hr>
-          <h3>rakeとは</h3>
-          <p>主にRubyコミュニティで利用されているビルドツールです。詳しくは<a href="http://ja.wikipedia.org/wiki/Rake">ウィキペディア</a>の記事をご覧ください。</p>
+          <h3>What is rake?</h3>
+          <p>rake is build tool. Please read <a href="http://en.wikipedia.org/wiki/Rake_(software)">Wikipedia</a>.</p>
           <hr>
-          <h3>フィードバックをお待ちしています</h3>
-          <p><a href="https://github.com/eller86/press-start">GitHub</a>にてフィードバックをお待ちしています。</p>
+          <h3>Please tell me your request!</h3>
+          <p>Do you have requests? Please create issues at <a href="https://github.com/eller86/press-start">GitHub</a>. Thank you.</p>
         </div>
       </div>
 
